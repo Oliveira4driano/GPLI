@@ -191,4 +191,16 @@ Feito isso, é o tempo de beber um café e voltar para usar o sistema!
 Pós instalação
 
 Após a instalação, ainda são necessários alguns pequenos ajustes finos.
+![image-9](https://user-images.githubusercontent.com/33138839/129337793-1b52de89-d970-48ec-8735-b8a1e8c97e28.png)
+O primeiro deles é com relação ao pseudo cron:
+	
+# Criar entrada no agendador de tarefas do Linux
+echo -e "* *\t* * *\troot\tphp /var/www/html/glpi/front/cron.php" >> /etc/crontab
+ 
+# Reiniciar agendador de tarefas para ler as novas configurações
+service cron restart
 
+O segundo é a remoção do diretório de instalação.
+	
+# Remover diretório de instalação
+rm -Rf /var/www/html/glpi/install
