@@ -183,4 +183,6 @@ Como de costume, podemos também realizar a instalação via navegador web. Bast
 Caso não tenha certeza de qual o endereço IP, basta digitar o seguinte comando no servidor:
 
 hostname -I
+![image-7](https://user-images.githubusercontent.com/33138839/129336426-17c48b58-ccd1-4e52-95df-5c0418d12dda.png)
+Os passos a são relativamente intuitivos, com excessão da configuração da conexão com o banco de dados que alguns iniciantes se atrapalham. Mas aqui vai um print para ajudar:
 
