@@ -185,4 +185,10 @@ Caso não tenha certeza de qual o endereço IP, basta digitar o seguinte comando
 hostname -I
 ![image-7](https://user-images.githubusercontent.com/33138839/129336426-17c48b58-ccd1-4e52-95df-5c0418d12dda.png)
 Os passos a são relativamente intuitivos, com excessão da configuração da conexão com o banco de dados que alguns iniciantes se atrapalham. Mas aqui vai um print para ajudar:
+![image-7a](https://user-images.githubusercontent.com/33138839/129337370-1885d279-dda0-4f44-a433-5982dbcd0288.png)
+![image-8](https://user-images.githubusercontent.com/33138839/129337385-302c165a-3e62-44bc-be44-6e68fd15fa60.png)
+Feito isso, é o tempo de beber um café e voltar para usar o sistema!
+Pós instalação
+
+Após a instalação, ainda são necessários alguns pequenos ajustes finos.
 
