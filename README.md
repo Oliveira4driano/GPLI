@@ -48,3 +48,4 @@ systemctl start openntpd
 
 Importante selecionar o melhor Timezone para sua região!
 ![image-3](https://user-images.githubusercontent.com/33138839/129328625-030106b9-a4e1-43fd-b59b-90f797d61637.png)
+![image-4](https://user-images.githubusercontent.com/33138839/129328838-28acda52-f679-4346-bd5c-6d4ccac97cc6.png)
