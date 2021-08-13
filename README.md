@@ -168,3 +168,19 @@ php /var/www/html/glpi/bin/console glpi:database:install --db-host=localhost --d
 Repare que estamos passando todas as informações necessárias via linha de comando, tais como: Servidor sendo localhost, name da base de dados sendo glpidb, usuário sendo verdanatech e senha sendo 123456.
 Uma observação que vale ouro é a de que, caso você utilize caracteres especiais em sua senha, proteja-a com aspas simples (--db-password='123@123') para inibir a interpretação pelo Shell.
 
+![image-10-1024x164](https://user-images.githubusercontent.com/33138839/129336227-e5e478b9-c00a-4f2c-bdb9-612f431a521d.png)
+
+Feito isso, seu GLPi estará pronto porém, existe uma pequena particularidade: os caches foram criados com permissões para o usuário root que executou a instalação e isso gerará um erro HTTP 500 ao tentar manipular estes arquivos do lado do navegador.
+
+Para ajustar este problema, basta executar os comandos abaixo:
+	
+# Reajustando o acesso ao usuário do Apache
+chown www-data. /var/www/html/glpi/files -Rf
+Instalação via Web
+
+Como de costume, podemos também realizar a instalação via navegador web. Basta abri-lo e acessar o endereço WEB do servidor GLPi que estávamos configurando e correr com a instalação tal como de costume.
+
+Caso não tenha certeza de qual o endereço IP, basta digitar o seguinte comando no servidor:
+
+hostname -I
+
