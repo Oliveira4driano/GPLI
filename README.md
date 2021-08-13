@@ -47,3 +47,4 @@ systemctl enable openntpd
 systemctl start openntpd
 
 Importante selecionar o melhor Timezone para sua região!
+![image-3](https://user-images.githubusercontent.com/33138839/129328625-030106b9-a4e1-43fd-b59b-90f797d61637.png)
