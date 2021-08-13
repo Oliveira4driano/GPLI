@@ -153,5 +153,18 @@ Aqui, devemos tomar uma decisão:
     Realizar a instalação no modo padrão, via interface Web
 
 Mostraremos os 2 modos para que você possa conhecê-los e escolher o melhor para seus laboratórios e implantações.
+
 Instalação via Shell
+
+Como dito antes, temos agora um pseudo prompt a ser utilizado. Trata-se de um arquivo em PHP chamado de “console” localizado em “/var/www/html/glpi/bin/”, segundo nossa instalação.
+
+Para usá-lo, basta digitar seu caminho antecedido pelo comando ‘php’ e seguido dos parâmetros desejados que, em nosso caso, tratam-se dos parâmetros de instalação:
+1
+2
+	
+# Comando de instalação do Banco de Dados via Console
+php /var/www/html/glpi/bin/console glpi:database:install --db-host=localhost --db-name=glpidb --db-user=verdanatech --db-password=123456
+
+Repare que estamos passando todas as informações necessárias via linha de comando, tais como: Servidor sendo localhost, name da base de dados sendo glpidb, usuário sendo verdanatech e senha sendo 123456.
+Uma observação que vale ouro é a de que, caso você utilize caracteres especiais em sua senha, proteja-a com aspas simples (--db-password='123@123') para inibir a interpretação pelo Shell.
 
