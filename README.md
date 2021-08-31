@@ -108,9 +108,9 @@ Estamos com apenas 1 linha de comando baixando o pacote GLPi de seu repositório
 Com os arquivos já em seu devido lugar, faremos agora um ajuste em cima das permissões destes. Execute os seguintes comando:
 
 # AJUSTAR PERMISSÕES DE ARQUIVOS
-chown www-data. /var/www/html/glpi -Rf
-find /var/www/html/glpi -type d -exec chmod 755 {} \;
-find /var/www/html/glpi -type f -exec chmod 644 {} \;
+chown www-data. /var/www/html/glpi -Rf<br>
+find /var/www/html/glpi -type d -exec chmod 755 {} \;<br>
+find /var/www/html/glpi -type f -exec chmod 644 {} \;<br>
 
 Finalizado esta etapa
 
